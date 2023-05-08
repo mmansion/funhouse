@@ -3,23 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script> -->
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="styles.css">
-    <!-- <script defer src="libs/p5.min.js"></script> -->
-    <!-- <script defer src="libs/p5.sound.min.js"></script> -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"
-        integrity="sha512-3RlxD1bW34eFKPwj9gUXEWtdSMC59QqIqHnD8O/NoTwSJhgxRizdcFVQhUMFyTp5RwLTDL0Lbcqtl8b7bFAzog=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"
-            integrity="sha512-WzkwpdWEMAY/W8WvP9KS2/VI6zkgejR4/KTxTl4qHx0utqeyVE0JY+S1DlMuxDChC7x0oXtk/ESji6a0lP/Tdg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            
+    <script defer src="libs/p5.min.js"></script>
+    <script defer src="libs/p5.sound.min.js"></script>
+    <script src="scripts/helpers.js"></script>
+    <script src="scripts/setup.js"></script>
+    <script src="scripts/classes.js"></script>
     <script src="scripts/sketch.js"></script>
     <script src="scripts/test.js"></script>
-    <title>brilliant sketch</title>
+    <title>prompt</title>
 </head>
 <body>
     <div id="textbox">
@@ -32,10 +25,8 @@
         <article id="seq_step_2">
             The reflected ball faces left.<br><br>
             In this room, light rays bounce off the mirror once and reflect the image.<br><br>
-
             <div class="btn-tray">
                 <input class="btn" type="button" value="NEXT" onclick="buttonClicked(this)">
-                <!-- <input id="right-btn" class="btn" type="button" value="RIGHT" onclick="buttonClicked(this)"> -->
             </div>
         </article>
         <article id="seq_step_3">
@@ -47,9 +38,9 @@
             Click on each ball to see how they change.
         </article>
         <article id="seq_step_4">
-            Light rays increase as they bounce back and forth off the mirrors.<br><br>
-            Reflections appear to get smaller and fade into the distance.<br><br>
-            Dashed lines shows the perceived distance to the reflected image. Solid arrows describe the reflected rays of light.<br><br>
+            The distance the light travels increases with each additional reflection.<br><br>
+            Reflected images appear to get smaller and fade into the distance.<br><br>
+            Dashed lines show the perceived location to the reflected image. Solid arrows describe the reflected rays of light.<br><br>
             <br><br>
             <br><br>
             <div class="btn-tray">
@@ -57,7 +48,7 @@
             </div>
         </article>
         <article id="seq_step_5">
-            The perceived distance to this reflection of the ball?<br><br>
+            We can calculate the perceived distance to the image of the ball by adding the lenghts of each reflected ray.<br><br>
             The distance is:
             <pre class="formula"> 
                 d  =  a  +  b
@@ -69,7 +60,7 @@
             </div>
         </article>
         <article id="seq_step_6">
-            The next reflection looks further away because the light have traveled further.<br><br>
+            The next reflection looks further away because the light has traveled further.<br><br>
             What is the distance to this reflection of the ball?<br><br>
             <div class="btn-tray">
                 <input id="answer_text" type="text" placeholder="51">
