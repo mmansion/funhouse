@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script> -->
+    
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="libs/p5.min.js"></script>
+    <script defer src="libs/p5.sound.min.js"></script>
+    <script src="scripts/sketch.js"></script>
+    <script src="scripts/test.js"></script>
+    <title>brilliant sketch</title>
+</head>
+<body>
+    <div id="textbox">
+        <article id="seq_step_1">
+            A one-eyed clown lost a ball in a funhouse full of mirrors.<br><br>
+            In a room with one mirror, they find two balls. The first ball faces right.
+            Which direction does the reflected ball face?<br><br>
+            Click on the ball to see.
+        </article>
+        <article id="seq_step_2">
+            The reflected ball faces left.<br><br>
+            In this room, light rays bounce off the mirror once and reflect the image.<br><br>
+
+            <div class="btn-tray">
+                <input class="btn" type="button" value="NEXT" onclick="buttonClicked(this)">
+                <!-- <input id="right-btn" class="btn" type="button" value="RIGHT" onclick="buttonClicked(this)"> -->
+            </div>
+        </article>
+        <article id="seq_step_3">
+            The next room contains parallel mirrors, creating an infinite set of reflections along a straight line.
+            <br><br>
+            Observe how light bounces on the mirrors. What do you notice about the balls as their reflections increase?
+            Which directions do next two reflected balls face?
+            <br><br>
+            Click on each ball to see how they change.
+        </article>
+        <article id="seq_step_4">
+            Light rays increase as they bounce back and forth off the mirrors.<br><br>
+            Reflections appear to get smaller and fade into the distance.<br><br>
+            Dashed lines shows the perceived distance to the reflected image. Solid arrows describe the reflected rays of light.<br><br>
+            <br><br>
+            <br><br>
+            <div class="btn-tray">
+                <input class="btn" type="button" value="NEXT" onclick="buttonClicked(this)">
+            </div>
+        </article>
+        <article id="seq_step_5">
+            The perceived distance to this reflection of the ball?<br><br>
+            The distance is:
+            <pre class="formula"> 
+                d  =  a  +  b
+            </pre>
+            <br><br>
+            <br><br>
+            <div class="btn-tray">
+                <input class="btn" type="button" value="NEXT" onclick="buttonClicked(this)">
+            </div>
+        </article>
+        <article id="seq_step_6">
+            The next reflection looks further away because the light have traveled further.<br><br>
+            What is the distance to this reflection of the ball?<br><br>
+            <div class="btn-tray">
+                <input id="answer_text" type="text" placeholder="51">
+                <input class="btn" type="button" value="SUBMIT" onclick="buttonClicked(this)">
+                <!-- text input field -->
+                
+            </div>
+        </article>
+        <article id="seq_step_7">
+            <b>END OF SKETCH</b><br><br>
+            <em>
+                Further sections would explore the trigonometric relationships of the reflected angles.<br>
+            </em>            
+            <div class="btn-tray">
+                <input class="btn" type="button" value="REPLAY" onclick="buttonClicked(this)">        
+            </div>
+        </article>
+    </div>
+</body>
+</html>
