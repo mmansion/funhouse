@@ -18,21 +18,21 @@ let labels = {
 };
 let labelSize = 24;
 let palette = {
-    white: '#ffffff',
-    gray1: '#f2f2f2',
-    gray2: '#cccccc',
-    gray3: '#b3b3b3',
-    gray4: '#999999',
-    gray5: '#808080',
-    red1: '#ed1c24',
+    white:  '#ffffff',
+    gray1:  '#f2f2f2',
+    gray2:  '#cccccc',
+    gray3:  '#b3b3b3',
+    gray4:  '#999999',
+    gray5:  '#808080',
+    red1:   '#ed1c24',
     green1: '#22b573',
-    blue1: '#0000ff',
-    blue2: '#29abe2',
-    blue3: '#5fd6ff',
-    pink: '#ff99ff',
-    gold: '#ffec14',
+    blue1:  '#0000ff',
+    blue2:  '#29abe2',
+    blue3:  '#5fd6ff',
+    pink:   '#ff99ff',
+    gold:   '#ffec14',
     orange: '#ff7f27',
-    black: '#000000'
+    black:  '#000000'
 };
 let selColor = [palette.blue2, palette.red1, palette.blue1];
 //-------------------------------------------------------------

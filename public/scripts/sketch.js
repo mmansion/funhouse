@@ -229,8 +229,8 @@ function draw() {
     // noLoop();
     //---------------------
 
-    grid.display();
     room.display();
+    grid.display();
     room.getWall('east').display('bold');
     room.getWall('west').display('bold');
     
